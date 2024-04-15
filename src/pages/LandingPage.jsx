@@ -47,6 +47,9 @@ import ClippifyMobileScreen from '../assets/ClippifyMobileScreen.png';
 import LupodyMobileScreen from '../assets/LupodyMobileScreen.png';
 import { Link } from "react-router-dom";
 import MyResume from '../assets/OT_Resume.pdf'
+
+import { CloudflareworkersOriginal, Css3Original, FigmaOriginal, FirebaseOriginal, GoogleOriginal, GooglecloudOriginal, Html5Original, NodejsOriginal, ReactOriginal, ViteOriginal, ViteOriginalWordmark } from 'devicons-react';
+
 const LandingPage = () => {
 
 //<**************VARIABLES**********************>
@@ -219,41 +222,28 @@ const handleSeeMore = (navigationTitle) => {
 return (
 <div className="landing-page">
     <div className="row1">
-        <div className="hero">
-            <div className="wrapper">
-                <motion.div
-                    className="textContainer"
-                    variants={textVariants}
-                    initial="initial"
-                    animate="animate"
-                >
-                    <motion.h2 variants={textVariants}>Hi, I'm <span>Tamas. 👋</span></motion.h2>
-                    <motion.h1 variants={textVariants}>
-                    <span className="hero-span">Fullstack Developer</span> and <span className="hero-span">IT Enthusiast</span> in <span className="hero-span">Several Subject</span>. I'm responsible to code your ideas into reality.
-                    </motion.h1>
-                    <motion.div variants={textVariants} className="buttons">
-                        <motion.button variants={textVariants}>
-                            <a onClick={openResume}  href="">See my career resume</a>
-                        </motion.button>
-                        <motion.button variants={textVariants}><a href="/contact">Contact Me</a></motion.button>
-                    </motion.div>
-                    <motion.img
-                        variants={textVariants}
-                        animate="scrollButton"
-                        src={downArrow}
-                        alt="dasdsd"
-                        className="scrollButton"
-                    />
-                </motion.div>
+            <div className="hero-left">
+                <div className="hero-m-title">
+                   <h2>Build a great place to work</h2>
+                </div>
+                <div className="hero-s-title">
+                    <h4>Stairs brings together your team's working docs and important discussions. Move projects faster, work more asyncrously and feel connected.</h4>
+                </div>
+                <div className="hero-b-row">
+                    <div className="filled-btn">
+                        Try Stairs for free
+                    </div>
+                    <div className="unfilled-btn">
+                        How it works
+                    </div>
+                </div>
+                <div className="trust-row">
+                    <h6>Companies trust us</h6>
+                    <GoogleOriginal size={30} />
+                    <GoogleOriginal size={30} />
+                    <GoogleOriginal size={30} />
+                </div>
             </div>
-
-            <div className="spline3D">
-                <img src={betterByteLogo} className="profile-image" alt="" />
-            </div>
-        </div>
-        <div className="cube-bg">
-            <Spline scene="https://prod.spline.design/8TZXGNPj0BahNLrA/scene.splinecode" />
-        </div>
     </div>
 
     <div style={{borderTop:"1px solid black", display:"flex",flexDirection:"column"}}>
