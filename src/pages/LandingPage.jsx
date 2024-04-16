@@ -47,25 +47,51 @@ return (
         </div>
         <h3 className="why-us-title"> <span className="gradient-span-purple">Modern</span> & <span className="gradient-span-green">Powerful</span> skills</h3>
         <h5 className="why-us-desc">Each member of our team is highly skilled and experienced in their domain, which makes our service quick, powerful and most up to date to the current market</h5>
-        <div className="why-us-cont">
-            <div className="why-bubble">
-                valami
+
+        <div className="why-bubble-container">
+
+            <div className="why-us-cont_t-1">
+            
+                <div className="why-bubble-t">
+                    <div className="bubble-title">
+                        <h4>Delightful and <span style={{color:"white",fontWeight:700}}>simple</span> stat</h4>    
+                    </div>
+                    <div className="bubble-badge-green">
+                        <h3>+ 10 000 hours of experience </h3>
+                    </div>
+                </div>
+                
+                <div className="why-bubble-b">
+                    App Developers
+                </div>
+
+
             </div>
-            <span style={{color:"white"}}>+</span>
-            <div className="why-bubble">
-                valami
+
+            <div className="why-us-cont_t-2">
+                <div className="why-bubble-t">
+                    Machine Learning
+                </div>
+            
+                <div className="why-bubble-b">
+                    Web Developers
+                </div>
+                
+
             </div>
-            <span style={{color:"white"}}>+</span>
-            <div className="why-bubble">
-                valami
+
+            <div className="why-us-cont_t-3">
+            
+                <div className="why-bubble-t">
+                    Web Developers
+                </div>
+                
+                <div className="why-bubble-b">
+                    Mobile Developers
+                </div>
             </div>
         </div>
-        <hr className="w-hr" />
-        <div className="why-us-cont-bottom">
-            <div className="why-bubble-bottom">
-                valami
-            </div>
-        </div>
+
     </section>
 
     <section id="services">

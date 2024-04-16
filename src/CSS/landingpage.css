@@ -379,32 +379,59 @@ transform: scale(1.07);
 }
 
 .why-us-title{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-top: 30px;
     color: rgb(255, 255, 255);
-    opacity: 0.4;
+    opacity: 1;
 }
 
 .why-us-desc{
-    max-width: 300px;
+    max-width: 330px;
     color: white;
-    opacity: 0.3;
+    opacity: 0.5;
     font-weight: 500;
     text-align: center;
     font-size: 10px;
     margin-bottom: 50px;
 }
 
-.why-us-cont{
+.why-bubble-container{
     display: flex;
     flex-direction: row;
-    width: 80%;
+    justify-content: space-between;
+    width: 1200px;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.why-us-cont_t-1{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 10px;
+
+}
+.why-us-cont_t-2{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.why-us-cont_t-3{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .w-hr{
@@ -412,20 +439,113 @@ transform: scale(1.07);
     opacity: 1;
     /*LINEAR OPACITY EFFECT STRONG RIGHT AND LESS TO LEFT*/
     border-image: white;
-    height: 100px;
+    height: 10px;
 
 }
 
-.why-bubble{
+.why-us-cont_t-1 .why-bubble-t{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 450px;
+    background-color: black;
+    box-shadow: 0px 0px 1px 2px rgb(214, 131, 246);
+    transition: ease-in-out 0.3s;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 20px;
+    justify-content: space-between;
+    background-image: linear-gradient(360deg, var(--primary-color), #000000 40%);
+
+}
+
+
+.why-us-cont_t-1 .why-bubble-b{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 150px;
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0px 0px 1px 1px rgb(245, 96, 233);
+    transition: ease-in-out 0.3s;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-image: linear-gradient(90deg, var(--primary-color)20%, #fdefff);
+}
+
+.why-us-cont_t-2 .why-bubble-t{
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 300px;
-    border-radius: 10%;
+    height: 200px;
     background-color: black;
     padding: 20px;
-    box-shadow: 0px 0px 10px 0px rgb(245, 96, 233);
+    box-shadow: 0px 0px 1px 1px rgb(245, 96, 233);
     transition: ease-in-out 0.3s;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+.why-us-cont_t-2 .why-bubble-b{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0px 0px 1px 1px rgb(245, 96, 233);
+    transition: ease-in-out 0.3s;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.why-us-cont_t-3 .why-bubble-t{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0px 0px 1px 1px rgb(245, 96, 233);
+    transition: ease-in-out 0.3s;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.why-us-cont_t-3 .why-bubble-b{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0px 0px 1px 1px rgb(245, 96, 233);
+    transition: ease-in-out 0.3s;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
 }
 
 .why-us-cont-bottom{
@@ -435,6 +555,7 @@ transform: scale(1.07);
     justify-content: space-between;
     align-items: center;
 }
+
 
 .why-bubble-bottom{
     display: flex;
@@ -448,6 +569,327 @@ transform: scale(1.07);
     border-top-right-radius: 0px;
     box-shadow: 0px 0px 10px 0px rgb(245, 96, 233);
     transition: ease-in-out 0.3s;
+}
+
+.bubble-badge-green{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.bubble-badge-green h3{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #4afcaf;
+}
+
+.bubble-title h4{
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.bubble-title{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--primary-color);
+    background-image: linear-gradient(90deg, var(--primary-color)20%, #fdefff);
+    opacity: 1;
+    width: 100%;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 0px;
+}
+
+
+/*RESPONSIVE BUBBLE*/
+
+@media (max-width: 1300px) {
+    .why-bubble-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 800px;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+    
+    }
+    .why-us-cont_t-1{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .why-us-cont_t-2{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .why-us-cont_t-3{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+
+    .why-us-cont_t-1 .why-bubble-t{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 450px;
+        background-color: black;
+        padding: 20px;
+        box-shadow: 0px 0px 1px 1px rgb(245, 96, 233);
+        transition: ease-in-out 0.3s;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    
+    .why-us-cont_t-1 .why-bubble-b{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 150px;
+        background-color: black;
+        padding: 20px;
+        box-shadow: 0px 0px 1px 1px rgb(245, 96, 233);
+        transition: ease-in-out 0.3s;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    .why-us-cont_t-2 .why-bubble-t{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        padding: 20px;
+        box-shadow: 0px 0px 1px 1px rgb(245, 96, 233);
+        transition: ease-in-out 0.3s;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .why-us-cont_t-2 .why-bubble-b{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 400px;
+        background-color: black;
+        padding: 20px;
+        box-shadow: 0px 0px 1px 1px rgb(245, 96, 233);
+        transition: ease-in-out 0.3s;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    
+    }
+    
+    .why-us-cont_t-3 .why-bubble-t{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 400px;
+    
+        background-color: black;
+        padding: 20px;
+        box-shadow: 0px 0px 1px 1px rgb(245, 96, 233);
+        transition: ease-in-out 0.3s;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .why-us-cont_t-3 .why-bubble-b{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 200px;
+    
+        background-color: black;
+        padding: 20px;
+        box-shadow: 0px 0px 1px 1px rgb(245, 96, 233);
+        transition: ease-in-out 0.3s;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    
+    }
+}
+
+@media (max-width: 920px) {
+    .why-bubble-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .why-us-cont_t-1{
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .why-us-cont_t-2{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .why-us-cont_t-3{
+        display: flex;
+        flex-direction: column;
+        width: 80px;
+        justify-content: space-between;
+        align-items: center;
+        display: none;
+    
+    }
+
+    .why-us-cont_t-1 .why-bubble-t{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 450px;
+        background-color: black;
+        padding: 20px;
+        box-shadow: 0px 0px 1px 1px rgb(245, 96, 233);
+        transition: ease-in-out 0.3s;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    
+    .why-us-cont_t-1 .why-bubble-b{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 150px;
+        background-color: black;
+        padding: 20px;
+        box-shadow: 0px 0px 1px 1px rgb(245, 96, 233);
+        transition: ease-in-out 0.3s;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    
+    .why-us-cont_t-2 .why-bubble-t{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        background-color: black;
+        padding: 20px;
+        box-shadow: 0px 0px 1px 1px rgb(245, 96, 233);
+        transition: ease-in-out 0.3s;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .why-us-cont_t-2 .why-bubble-b{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+        background-color: black;
+        padding: 20px;
+        box-shadow: 0px 0px 1px 1px rgb(245, 96, 233);
+        transition: ease-in-out 0.3s;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    
+    }
+    
+    .why-us-cont_t-3 .why-bubble-t{
+        display: flex;
+        flex-direction: column;
+        width: 80px;
+        height: 400px;
+    
+        background-color: black;
+        padding: 20px;
+        box-shadow: 0px 0px 1px 1px rgb(245, 96, 233);
+        transition: ease-in-out 0.3s;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .why-us-cont_t-3 .why-bubble-b{
+        display: flex;
+        flex-direction: column;
+        width: 80px;
+        height: 200px;
+    
+        background-color: black;
+        padding: 20px;
+        box-shadow: 0px 0px 1px 1px rgb(245, 96, 233);
+        transition: ease-in-out 0.3s;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    
+    }
 }
 
 
