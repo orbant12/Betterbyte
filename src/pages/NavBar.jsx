@@ -26,7 +26,7 @@ return (
     <div className='add-bar'>
           <span>Get 20% off on all services</span>
     </div>
-    <nav>
+    <nav className='sticky'>
       <div className="nav-bar active">
         <i className='bx bx-menu sidebarOpen' onClick={handleBurgerMenuOpen2}/>
         <span className="logo navLogo"><a href="/">betterByte</a></span>
